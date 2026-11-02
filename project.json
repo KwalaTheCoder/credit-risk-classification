@@ -1,0 +1,8 @@
+{
+  "domain": "credit-risk",
+  "task": "classification",
+  "targets": [
+    "loan_status"
+  ],
+  "exclude": []
+}
