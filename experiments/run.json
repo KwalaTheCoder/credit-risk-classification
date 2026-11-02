@@ -1,0 +1,10 @@
+{
+  "project": "credit-risk-classification",
+  "exit_code": 0,
+  "seconds": 43.6,
+  "data_file": "Credit_Risk/credit_risk_dataset.csv",
+  "data_sha256": "ce3c6d2167717bf1627d1c0c81cbccd28323cd4aa7b96d542599366d5ff6aac8",
+  "tuned": false,
+  "folds": 5,
+  "seed": 42
+}

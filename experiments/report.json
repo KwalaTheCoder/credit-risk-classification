@@ -1,0 +1,112 @@
+{
+  "project": "credit-risk",
+  "task": "classification",
+  "seed": 42,
+  "folds": 5,
+  "scoring": "f1_macro",
+  "cv_selection_score": 0.886225132222245,
+  "selected_model": "RandomForestClassifier",
+  "leaderboard": [
+    {
+      "model": "DummyClassifier",
+      "parameters": {},
+      "cv_score": 0.43922193631517015,
+      "cv_std": 0.0015879300131648483
+    },
+    {
+      "model": "LogisticRegression",
+      "parameters": {},
+      "cv_score": 0.7630628185918029,
+      "cv_std": 0.008041771542186426
+    },
+    {
+      "model": "RandomForestClassifier",
+      "parameters": {},
+      "cv_score": 0.886225132222245,
+      "cv_std": 0.008029121655194961
+    },
+    {
+      "model": "ExtraTreesClassifier",
+      "parameters": {},
+      "cv_score": 0.8585754355623282,
+      "cv_std": 0.00817556110281463
+    }
+  ],
+  "holdout": {
+    "accuracy": 0.9275406816088425,
+    "balanced_accuracy": 0.8544853199718706,
+    "f1_macro": 0.8858724355143448,
+    "classification_report": {
+      "0": {
+        "precision": 0.924916573971079,
+        "recall": 0.986748417721519,
+        "f1-score": 0.9548325358851675,
+        "support": 5056.0
+      },
+      "1": {
+        "precision": 0.9401785714285714,
+        "recall": 0.7222222222222222,
+        "f1-score": 0.8169123351435221,
+        "support": 1458.0
+      },
+      "accuracy": 0.9275406816088425,
+      "macro avg": {
+        "precision": 0.9325475726998251,
+        "recall": 0.8544853199718706,
+        "f1-score": 0.8858724355143448,
+        "support": 6514.0
+      },
+      "weighted avg": {
+        "precision": 0.9283325998066674,
+        "recall": 0.9275406816088425,
+        "f1-score": 0.9239624633212561,
+        "support": 6514.0
+      }
+    },
+    "classes": [
+      0,
+      1
+    ],
+    "confusion_matrix": [
+      [
+        4989,
+        67
+      ],
+      [
+        405,
+        1053
+      ]
+    ],
+    "roc_auc": 0.9278153948750673,
+    "average_precision": 0.8816722481936592,
+    "positive_class": "1"
+  },
+  "train_rows": 26067,
+  "test_rows": 6514,
+  "input_rows": 32581,
+  "missing_target_rows_removed": 0,
+  "missing_predictor_rows_removed": 0,
+  "grouped_split": true,
+  "group_column": null,
+  "features": [
+    "person_age",
+    "person_income",
+    "person_home_ownership",
+    "person_emp_length",
+    "loan_intent",
+    "loan_grade",
+    "loan_amnt",
+    "loan_int_rate",
+    "loan_percent_income",
+    "cb_person_default_on_file",
+    "cb_person_cred_hist_length"
+  ],
+  "data_fingerprint": "b9ca0acba0798bd77a809d1fb78e8a98d908fc098c90e580bc206e61272e2465",
+  "versions": {
+    "python": "3.12.14",
+    "sklearn": "1.8.0",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5"
+  },
+  "note": "CV scores select the model and are optimistic; holdout metrics are the final evaluation. Negative MAE scores are higher-is-better. Synthetic tests are not real-data benchmarks."
+}
